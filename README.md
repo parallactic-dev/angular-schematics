@@ -1,11 +1,21 @@
-# Getting Started With Schematics
+# Parallactic Angular Schematics
 
-This repository is a basic Schematic implementation that serves as a starting point to create and publish Schematics to NPM.
+Parallactic's best practices schematics for angular apps.
+
+### Development
+Use `npm run build:watch` to auto compile TypeScript while developing.
+```bash
+npm run build:watch
+```
+
+You can run your schemtic inside the repo like this:
+```bash
+schematics collection.json:store --debug=false
+```
 
 ### Testing
 
 To test locally, install `@angular-devkit/schematics-cli` globally and use the `schematics` command line tool. That tool acts the same as the `generate` command of the Angular CLI, but also has a debug mode.
-Example: `schematics collection.json:store --debug=false`
 
 Check the documentation with
 ```bash
