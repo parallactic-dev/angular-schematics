@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "StoreSchematics",
+    "title": "store",
+    "type": "object",
+    "properties": {
+        "path": {
+            "type": "string",
+            "description": "Path to creation location",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            }
+        }
+    },
+    "required": [
+        "path"
+    ]
+}

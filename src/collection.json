@@ -1,0 +1,10 @@
+{
+    "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+    "schematics": {
+        "store": {
+            "description": "Creates a basic ngrx store setup with CRUD functionality.",
+            "factory": "./store/index#index",
+            "schema": "./store/schema.json"
+        }
+    }
+}
